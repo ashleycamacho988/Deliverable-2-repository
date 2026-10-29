@@ -25,3 +25,16 @@ def create_pivot_table(df: pd.DataFrame) -> pd.DataFrame:
     """Creates a pivot table by item across status categories"""
     pivot_table = pd.pivot_table(df, values="price", index="item", columns="status", aggfunc="sum", fill_value=0)
     return pivot_table
+
+# The item refund ratio function
+def item_refund_ratios(df: pd.DataFrame) -> pd.DataFrame:
+    """Calculates the refund ratio per item"""
+    counts = df.groupby(["item", "status"]).size().unstack(fill_value=0)
+
+    sales_count = counts.get("SUCCESS", pd.Series(0, index=counts.index)).to_numpy()
+    refund_count = counts.get("REFUND", pd.Series(0, index=counts.index)).to_numpy()
+
+    refund_ratios = compute_refund_ratio(sales_count, refund_count)
+
+    result = pd.DataFrame({"item": counts.index, "refund_ratio": refund_ratios})
+    return result
