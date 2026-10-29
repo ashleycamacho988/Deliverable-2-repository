@@ -19,3 +19,9 @@ def hourly_revenue(df: pd.DataFrame) -> pd.DataFrame:
 
     hourly = hourly.reset_index()
     return hourly 
+
+# The status pivot table function
+def create_pivot_table(df: pd.DataFrame) -> pd.DataFrame:
+    """Creates a pivot table by item across status categories"""
+    pivot_table = pd.pivot_table(df, values="price", index="item", columns="status", aggfunc="sum", fill_value=0)
+    return pivot_table
