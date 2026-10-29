@@ -11,3 +11,11 @@ def create_dataframe(transactions: list[dict]) -> pd.DataFrame:
     df = df.sort_index()
 
     return df
+
+# The hourly revenue function
+def hourly_revenue(df: pd.DataFrame) -> pd.DataFrame:
+    """Calculates the total revenue per item by the hour"""
+    hourly = df.groupby("item").resample("1h")["price"].sum()
+
+    hourly = hourly.reset_index()
+    return hourly 
