@@ -17,3 +17,11 @@ def clean_prices(prices: list | np.ndarray) -> np.ndarray:
         prices_array[outliers] = median_price
 
     return prices_array
+
+# The refund ratio function
+def compute_refund_ratio(sales_count: np.ndarray, refund_count: np.ndarray) -> np.ndarray:
+    """Computes the refund ratio by using NumPy array operations"""
+    epsilon = 1e-6
+
+    refund_ratio = refund_count / (sales_count + epsilon)
+    return refund_ratio
