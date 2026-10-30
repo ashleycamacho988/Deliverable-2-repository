@@ -1,4 +1,5 @@
 # Code for task 4
+import numpy as np
 import pandas as pd
 
 # The DataFrame creation function
