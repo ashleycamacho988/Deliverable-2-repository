@@ -1,0 +1,25 @@
+* 467601a - Alyssa Camacho, 54 minutes ago : added the code
+* f0aced0 - Alyssa Camacho, 55 minutes ago : added imports
+* 4e65d35 - Alyssa Camacho, 65 minutes ago : added numpy import
+* 4a2dafd - Alyssa Camacho, 21 hours ago : added the item refund ratio function
+* c7cf6b9 - Alyssa Camacho, 21 hours ago : added the status pivot table function
+* 7baf1e7 - Alyssa Camacho, 21 hours ago : added the hourly revenue function
+* d098ace - Alyssa Camacho, 21 hours ago : added the dataframe creation function
+* 1a36a84 - Alyssa Camacho, 21 hours ago : added pandas import
+* a7345a8 - Alyssa Camacho, 23 hours ago : added the refund ratio function
+* 35b7987 - Alyssa Camacho, 23 hours ago : added the removing price outliers function
+* 1ef0bfe - Alyssa Camacho, 23 hours ago : added numpy import
+* b20d829 - Alyssa Camacho, 24 hours ago : added the last recursive function
+* 1a500f9 - Alyssa Camacho, 24 hours ago : added the recursive directory search function
+* cb7975e - Alyssa Camacho, 24 hours ago : added Path import
+* e42cf6e - Alyssa Camacho, 24 hours ago : added the log parser function
+* 2f7523d - Alyssa Camacho, 24 hours ago : added the first function for task 1
+* c281254 - Alyssa Camacho, 24 hours ago : added imports
+* e74b427 - Alyssa Camacho, 25 hours ago : added .venv/
+* a179df1 - Alyssa Camacho, 25 hours ago : added information on our venv environment
+* ed4f0ea - Alyssa Camacho, 8 days ago : first commit
+* a8c1810 - Alyssa Camacho, 8 days ago : first commit
+* a7451a6 - Alyssa Camacho, 8 days ago : first commit
+* 193161f - Alyssa Camacho, 8 days ago : first commit
+* 16823f1 - Alyssa Camacho, 8 days ago : first commit
+* 24c5815 - ashleycamacho988, 8 days ago : Initial commit
